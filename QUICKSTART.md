@@ -15,21 +15,10 @@ This guide will help you get the User Management API up and running quickly.
 # Navigate to the project directory
 cd workspace
 
-# Copy environment file
-cp .env.example .env
-
-# (Optional) Edit .env to customize settings
-# nano .env
-```
-
-### Step 2: Generate Secret Key
-
-```bash
-# Generate a secure secret key
+# A .env file is already created with Docker defaults
+# For production, generate a new SECRET_KEY:
 make generate-secret
-
-# Copy the generated key to your .env file
-# Edit .env and replace SECRET_KEY with the generated value
+# Then update SECRET_KEY in .env with the generated value
 ```
 
 ### Step 3: Start Services
